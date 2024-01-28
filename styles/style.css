@@ -15,6 +15,7 @@
 */
 
 .page {
+  display: grid;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-text, sans-serif);
@@ -24,7 +25,7 @@
   background-image: repeating-linear-gradient(90deg, var(--bg-gradient-gorizont), var(--bg-gradient-gorizont) 2px, transparent 2px, transparent 4px),
                     repeating-linear-gradient(to bottom, var(--bg-gradient-gorizont), var(--bg-gradient-gorizont) 2px, transparent 2px, transparent 4px),
                     linear-gradient(to bottom, var(--bg-gradient-start) var(--gradient-start), var(--bg-gradient-end) 100%);
-  background-position: fixed;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -35,7 +36,7 @@
   margin: 100px auto 100px;
   border: 2px solid var(--accent-color-theme);
   background: var(--bg-color-theme);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text, fantasy);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -134,7 +135,7 @@
 .card__title {
   padding: 5px 10px;
   color: var(--accent-color-theme);
-  font-family: var(--main-text);
+  font-family: var(--main-text, sans-serif);
   font-size: 18px;
   font-style: normal;
   font-variation-settings: "wght" var(--label-text-weight);
@@ -160,7 +161,7 @@
   top: 25px;
   right: 25px;
   color: var(--accent-color-theme);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text, fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -188,7 +189,7 @@
   gap: 27px;
   border-top: 4px solid var(--accent-color-theme);
   color: var(--accent-color-theme);
-  font-family: var(--main-text);
+  font-family: var(--main-text, sans-serif);
   font-size: 18px;
   font-style: normal;
   font-variation-settings: "wght" var(--main-text-weight);
@@ -208,7 +209,7 @@
   background-color: transparent;
   padding: 1px 0 0;
   transition: border-color 0.3s ease;
-  max-height: 45px;
+  max-height: 38px;
 }
 
 .card__icon-button:focus {
@@ -222,7 +223,7 @@
 .button__text {
   position: relative;
   color: var(--accent-color-theme);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text, fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -275,7 +276,7 @@
   color: var(--accent-color-theme);
   display: flex;
   gap: 7px;
-  margin: 50px auto;
+  margin: 50px auto 105px;
   width: clamp(306px, 18.487rem + 2.723vw, 335px);
   padding: 15px 18px;
   align-items: center;
@@ -319,7 +320,7 @@ dialog::backdrop {
 .dialog__content-text {
   width: clamp(198px, 11.583rem + 3.38vw, 234px);
   color: var(--accent-color-theme);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text, fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -377,6 +378,10 @@ dialog::backdrop {
   filter: opacity(80%);
 }
 
+.filter-grayscale-opacity {
+  filter: grayscale(0.8), opacity(80%);
+}
+
 
 @media (width <= 375px) {
   .theme-menu__button:disabled::before {
@@ -389,6 +394,7 @@ dialog::backdrop {
 
   .footer__save-button {
     flex-direction: column;
+    margin: 50px auto 102px;
   }
 
   .floppy-footer {
