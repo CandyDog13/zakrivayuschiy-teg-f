@@ -1,1 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --main-text: 'Inter';
+    --accent-text: 'PressStart2P';
+    --main-text-weight: 400;
+    --label-text-weight: 700;
+    --bg-color-theme: #fff;
+    --accent-color-theme: #000;
+    --themes-background: url(../images/background_light.png);
+    --bg-gradient-gorizont: #d3d3d3;
+    --bg-gradient-start: #e7e7e7;
+    --bg-gradient-end: #1a1a1a;
+    --gradient-start: 0.01%;
+    --width-content: clamp(375px, 100%, 696px);
+    --color-watermark-shadow: #fff;
+    --hover-color: #fff;
+    --contour-heart: #000;
+    --sparks-heart: #FF0000;
+    --main-body-heart: transperent;
+    --core-heart: transperent;
+}
+

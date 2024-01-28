@@ -4,3 +4,59 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --main-text-weight: 400;
+    --label-text-weight: 700;
+    --bg-color-theme: #fff;
+    --accent-color-theme: #000;
+    --themes-background: url(../images/background_light.png);
+    --bg-gradient-gorizont: #d3d3d3;
+    --bg-gradient-start: #e7e7e7;
+    --bg-gradient-end: #1a1a1a;
+    --gradient-start: 0.01%;
+    --color-watermark-shadow: #fff;
+    --hover-color: #fff;
+    --contour-heart: #000;
+    --sparks-heart: #FF0000;
+    --main-body-heart: transperent;
+    --core-heart: transperent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --main-text-weight: 465;
+        --label-text-weight: 765;
+        --bg-color-theme: #000;
+        --accent-color-theme: #00CC14;
+        --themes-background: url(../images/background_dark.png);
+        --bg-gradient-gorizont: #000;
+        --bg-gradient-start: #007f0c;
+        --bg-gradient-end: #004306;
+        --gradient-start: 0%;
+        --color-watermark-shadow: #000;
+        --hover-color: #00CC14;
+        --contour-heart: #00CC14;
+        --sparks-heart: #FF0000;
+        --main-body-heart: transperent;
+        --core-heart: transperent;
+    }
+  }
+  
+  :root.theme-dark {
+    --main-text-weight: 465;
+    --label-text-weight: 765;
+    --bg-color-theme: #000;
+    --accent-color-theme: #00CC14;
+    --themes-background: url(../images/background_dark.png);
+    --bg-gradient-gorizont: #000;
+    --bg-gradient-start: #007f0c;
+    --bg-gradient-end: #004306;
+    --gradient-start: 0%;
+    --color-watermark-shadow: #000;
+    --hover-color: #00CC14;
+    --contour-heart: #00CC14;
+    --sparks-heart: #FF0000;
+    --main-body-heart: transperent;
+    --core-heart: transperent;
+  }
