@@ -379,7 +379,7 @@ dialog::backdrop {
 }
 
 .filter-grayscale-opacity {
-  filter: grayscale(0.8), opacity(80%);
+  filter: grayscale(0.8) opacity(80%);
 }
 
 
